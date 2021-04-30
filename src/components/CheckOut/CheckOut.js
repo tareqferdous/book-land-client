@@ -16,7 +16,7 @@ const CheckOut = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext)
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://young-garden-91386.herokuapp.com/products/${id}`)
         .then(response => response.json())
         .then(data => {
             console.log(data)
